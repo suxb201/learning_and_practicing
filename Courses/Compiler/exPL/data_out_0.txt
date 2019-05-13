@@ -1,0 +1,25 @@
+0
+1 jmp
+2 int  0 3
+3 lod  1  3
+4 lit   0  10
+5 opr  0  2
+6 sto  1  4
+7 opr  0  0
+8 int  0  5
+9 opr  0  16
+10 sto  0  3
+11 lod  0  3
+12 lit   0  0
+13 opr  0  9
+14 jpc  0  24
+15 cal  0  2
+16 lit   0  2
+17 lod  0  4
+18 opr  0  4
+19 opr  0  14
+20 opr  0  15
+21 opr  0  16
+22 sto  0  3
+23 jmp  0  11
+24 opr  0  0

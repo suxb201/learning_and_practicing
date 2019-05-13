@@ -1,0 +1,994 @@
+digraph hierarchy { 
+	rankdir=LR;  //Rank Direction Left to Right 
+	edge [color=blue] 
+	node [ fontname="YaHei Consolas Hybrid" size="20,20"]
+	1 [color=Red,label="root",shape=box]
+	2 [color=Red,label="程序",shape=box]
+	3 [color=Red,label="分程序",shape=box]
+	1->2
+	2->3
+	4 [color=Red,label="常量说明部分",shape=box]
+	3->4
+	5 [color=Red,label="const",shape=box]
+	4->5
+	6 [color=Red,label="常量定义",shape=box]
+	4->6
+	7 [color=Red,label="标识符",shape=box]
+	8 [color=Red,label="=",shape=box]
+	9 [color=Red,label="无符号整数",shape=box]
+	6->7
+	6->8
+	6->9
+	10 [color=Red,label="c1",shape=box]
+	7->10
+	11 [color=Red,label="2",shape=box]
+	9->11
+	12 [color=Red,label=";",shape=box]
+	4->12
+	13 [color=Red,label="变量说明部分",shape=box]
+	3->13
+	14 [color=Red,label="var",shape=box]
+	13->14
+	15 [color=Red,label="标识符",shape=box]
+	13->15
+	16 [color=Red,label="v1",shape=box]
+	15->16
+	17 [color=Red,label=",",shape=box]
+	13->17
+	18 [color=Red,label="标识符",shape=box]
+	13->18
+	19 [color=Red,label="v2",shape=box]
+	18->19
+	20 [color=Red,label=",",shape=box]
+	13->20
+	21 [color=Red,label="标识符",shape=box]
+	13->21
+	22 [color=Red,label="v3",shape=box]
+	21->22
+	23 [color=Red,label=",",shape=box]
+	13->23
+	24 [color=Red,label="标识符",shape=box]
+	13->24
+	25 [color=Red,label="v4",shape=box]
+	24->25
+	26 [color=Red,label=";",shape=box]
+	13->26
+	27 [color=Red,label="过程说明部分",shape=box]
+	28 [color=Red,label="过程首部",shape=box]
+	29 [color=Red,label="分程序",shape=box]
+	3->27
+	27->28
+	27->29
+	30 [color=Red,label=";",shape=box]
+	27->30
+	31 [color=Red,label="procedure",shape=box]
+	28->31
+	32 [color=Red,label="标识符",shape=box]
+	28->32
+	33 [color=Red,label="p1",shape=box]
+	32->33
+	34 [color=Red,label=";",shape=box]
+	28->34
+	35 [color=Red,label="变量说明部分",shape=box]
+	29->35
+	36 [color=Red,label="var",shape=box]
+	35->36
+	37 [color=Red,label="标识符",shape=box]
+	35->37
+	38 [color=Red,label="v5",shape=box]
+	37->38
+	39 [color=Red,label=";",shape=box]
+	35->39
+	40 [color=Red,label="语句",shape=box]
+	29->40
+	41 [color=Red,label="复合语句",shape=box]
+	40->41
+	42 [color=Red,label="begin",shape=box]
+	41->42
+	43 [color=Red,label="语句",shape=box]
+	41->43
+	44 [color=Red,label="赋值语句",shape=box]
+	45 [color=Red,label="标识符",shape=box]
+	43->44
+	44->45
+	46 [color=Red,label="v5",shape=box]
+	45->46
+	47 [color=Red,label=":=",shape=box]
+	44->47
+	48 [color=Red,label="表达式",shape=box]
+	44->48
+	49 [color=Red,label="项",shape=box]
+	48->49
+	50 [color=Red,label="因子",shape=box]
+	49->50
+	51 [color=Red,label="数字",shape=box]
+	50->51
+	52 [color=Red,label="2",shape=box]
+	51->52
+	53 [color=Red,label=";",shape=box]
+	41->53
+	54 [color=Red,label="语句",shape=box]
+	41->54
+	55 [color=Red,label="写语句",shape=box]
+	54->55
+	56 [color=Red,label="(",shape=box]
+	55->56
+	57 [color=Red,label="表达式",shape=box]
+	55->57
+	58 [color=Red,label="项",shape=box]
+	57->58
+	59 [color=Red,label="因子",shape=box]
+	58->59
+	60 [color=Red,label="标识符",shape=box]
+	59->60
+	61 [color=Red,label="v5",shape=box]
+	60->61
+	62 [color=Red,label="乘除运算符",shape=box]
+	58->62
+	63 [color=Red,label="/",shape=box]
+	62->63
+	64 [color=Red,label="因子",shape=box]
+	58->64
+	65 [color=Red,label="数字",shape=box]
+	64->65
+	66 [color=Red,label="2",shape=box]
+	65->66
+	67 [color=Red,label="加减运算符",shape=box]
+	57->67
+	68 [color=Red,label="+",shape=box]
+	67->68
+	69 [color=Red,label="项",shape=box]
+	57->69
+	70 [color=Red,label="因子",shape=box]
+	69->70
+	71 [color=Red,label="数字",shape=box]
+	70->71
+	72 [color=Red,label="2",shape=box]
+	71->72
+	73 [color=Red,label="加减运算符",shape=box]
+	57->73
+	74 [color=Red,label="-",shape=box]
+	73->74
+	75 [color=Red,label="项",shape=box]
+	57->75
+	76 [color=Red,label="因子",shape=box]
+	75->76
+	77 [color=Red,label="数字",shape=box]
+	76->77
+	78 [color=Red,label="1",shape=box]
+	77->78
+	79 [color=Red,label=")",shape=box]
+	55->79
+	80 [color=Red,label=";",shape=box]
+	41->80
+	81 [color=Red,label="语句",shape=box]
+	41->81
+	82 [color=Red,label="当型循环语句",shape=box]
+	81->82
+	83 [color=Red,label="while",shape=box]
+	82->83
+	84 [color=Red,label="条件",shape=box]
+	82->84
+	85 [color=Red,label="表达式",shape=box]
+	84->85
+	86 [color=Red,label="项",shape=box]
+	85->86
+	87 [color=Red,label="因子",shape=box]
+	86->87
+	88 [color=Red,label="标识符",shape=box]
+	87->88
+	89 [color=Red,label="v3",shape=box]
+	88->89
+	90 [color=Red,label="关系运算符",shape=box]
+	84->90
+	91 [color=Red,label="sym",shape=box]
+	90->91
+	92 [color=Red,label="表达式",shape=box]
+	84->92
+	93 [color=Red,label="项",shape=box]
+	92->93
+	94 [color=Red,label="因子",shape=box]
+	93->94
+	95 [color=Red,label="数字",shape=box]
+	94->95
+	96 [color=Red,label="0",shape=box]
+	95->96
+	97 [color=Red,label="do",shape=box]
+	82->97
+	98 [color=Red,label="语句",shape=box]
+	82->98
+	99 [color=Red,label="复合语句",shape=box]
+	98->99
+	100 [color=Red,label="begin",shape=box]
+	99->100
+	101 [color=Red,label="语句",shape=box]
+	99->101
+	102 [color=Red,label="赋值语句",shape=box]
+	103 [color=Red,label="标识符",shape=box]
+	101->102
+	102->103
+	104 [color=Red,label="v4",shape=box]
+	103->104
+	105 [color=Red,label=":=",shape=box]
+	102->105
+	106 [color=Red,label="表达式",shape=box]
+	102->106
+	107 [color=Red,label="项",shape=box]
+	106->107
+	108 [color=Red,label="因子",shape=box]
+	107->108
+	109 [color=Red,label="标识符",shape=box]
+	108->109
+	110 [color=Red,label="v1",shape=box]
+	109->110
+	111 [color=Red,label="乘除运算符",shape=box]
+	107->111
+	112 [color=Red,label="/",shape=box]
+	111->112
+	113 [color=Red,label="因子",shape=box]
+	107->113
+	114 [color=Red,label="标识符",shape=box]
+	113->114
+	115 [color=Red,label="v2",shape=box]
+	114->115
+	116 [color=Red,label=";",shape=box]
+	99->116
+	117 [color=Red,label="语句",shape=box]
+	99->117
+	118 [color=Red,label="赋值语句",shape=box]
+	119 [color=Red,label="标识符",shape=box]
+	117->118
+	118->119
+	120 [color=Red,label="v3",shape=box]
+	119->120
+	121 [color=Red,label=":=",shape=box]
+	118->121
+	122 [color=Red,label="表达式",shape=box]
+	118->122
+	123 [color=Red,label="项",shape=box]
+	122->123
+	124 [color=Red,label="因子",shape=box]
+	123->124
+	125 [color=Red,label="标识符",shape=box]
+	124->125
+	126 [color=Red,label="v1",shape=box]
+	125->126
+	127 [color=Red,label="加减运算符",shape=box]
+	122->127
+	128 [color=Red,label="-",shape=box]
+	127->128
+	129 [color=Red,label="项",shape=box]
+	122->129
+	130 [color=Red,label="因子",shape=box]
+	129->130
+	131 [color=Red,label="标识符",shape=box]
+	130->131
+	132 [color=Red,label="v4",shape=box]
+	131->132
+	133 [color=Red,label="乘除运算符",shape=box]
+	129->133
+	134 [color=Red,label="*",shape=box]
+	133->134
+	135 [color=Red,label="因子",shape=box]
+	129->135
+	136 [color=Red,label="标识符",shape=box]
+	135->136
+	137 [color=Red,label="v2",shape=box]
+	136->137
+	138 [color=Red,label=";",shape=box]
+	99->138
+	139 [color=Red,label="语句",shape=box]
+	99->139
+	140 [color=Red,label="赋值语句",shape=box]
+	141 [color=Red,label="标识符",shape=box]
+	139->140
+	140->141
+	142 [color=Red,label="v1",shape=box]
+	141->142
+	143 [color=Red,label=":=",shape=box]
+	140->143
+	144 [color=Red,label="表达式",shape=box]
+	140->144
+	145 [color=Red,label="项",shape=box]
+	144->145
+	146 [color=Red,label="因子",shape=box]
+	145->146
+	147 [color=Red,label="标识符",shape=box]
+	146->147
+	148 [color=Red,label="v2",shape=box]
+	147->148
+	149 [color=Red,label=";",shape=box]
+	99->149
+	150 [color=Red,label="语句",shape=box]
+	99->150
+	151 [color=Red,label="赋值语句",shape=box]
+	152 [color=Red,label="标识符",shape=box]
+	150->151
+	151->152
+	153 [color=Red,label="v2",shape=box]
+	152->153
+	154 [color=Red,label=":=",shape=box]
+	151->154
+	155 [color=Red,label="表达式",shape=box]
+	151->155
+	156 [color=Red,label="项",shape=box]
+	155->156
+	157 [color=Red,label="因子",shape=box]
+	156->157
+	158 [color=Red,label="标识符",shape=box]
+	157->158
+	159 [color=Red,label="v3",shape=box]
+	158->159
+	160 [color=Red,label=";",shape=box]
+	99->160
+	161 [color=Red,label="语句",shape=box]
+	99->161
+	162 [color=Red,label="空",shape=box]
+	161->162
+	163 [color=Red,label="end",shape=box]
+	99->163
+	164 [color=Red,label=";",shape=box]
+	41->164
+	165 [color=Red,label="语句",shape=box]
+	41->165
+	166 [color=Red,label="空",shape=box]
+	165->166
+	167 [color=Red,label="end",shape=box]
+	41->167
+	168 [color=Red,label="过程说明部分",shape=box]
+	169 [color=Red,label="过程首部",shape=box]
+	170 [color=Red,label="分程序",shape=box]
+	3->168
+	168->169
+	168->170
+	171 [color=Red,label=";",shape=box]
+	168->171
+	172 [color=Red,label="procedure",shape=box]
+	169->172
+	173 [color=Red,label="标识符",shape=box]
+	169->173
+	174 [color=Red,label="p2",shape=box]
+	173->174
+	175 [color=Red,label=";",shape=box]
+	169->175
+	176 [color=Red,label="常量说明部分",shape=box]
+	170->176
+	177 [color=Red,label="const",shape=box]
+	176->177
+	178 [color=Red,label="常量定义",shape=box]
+	176->178
+	179 [color=Red,label="标识符",shape=box]
+	180 [color=Red,label="=",shape=box]
+	181 [color=Red,label="无符号整数",shape=box]
+	178->179
+	178->180
+	178->181
+	182 [color=Red,label="c2",shape=box]
+	179->182
+	183 [color=Red,label="2",shape=box]
+	181->183
+	184 [color=Red,label=";",shape=box]
+	176->184
+	185 [color=Red,label="过程说明部分",shape=box]
+	186 [color=Red,label="过程首部",shape=box]
+	187 [color=Red,label="分程序",shape=box]
+	170->185
+	185->186
+	185->187
+	188 [color=Red,label=";",shape=box]
+	185->188
+	189 [color=Red,label="procedure",shape=box]
+	186->189
+	190 [color=Red,label="标识符",shape=box]
+	186->190
+	191 [color=Red,label="p3",shape=box]
+	190->191
+	192 [color=Red,label=";",shape=box]
+	186->192
+	193 [color=Red,label="语句",shape=box]
+	187->193
+	194 [color=Red,label="复合语句",shape=box]
+	193->194
+	195 [color=Red,label="begin",shape=box]
+	194->195
+	196 [color=Red,label="语句",shape=box]
+	194->196
+	197 [color=Red,label="条件语句",shape=box]
+	196->197
+	198 [color=Red,label="if",shape=box]
+	197->198
+	199 [color=Red,label="条件",shape=box]
+	197->199
+	200 [color=Red,label="表达式",shape=box]
+	199->200
+	201 [color=Red,label="项",shape=box]
+	200->201
+	202 [color=Red,label="因子",shape=box]
+	201->202
+	203 [color=Red,label="标识符",shape=box]
+	202->203
+	204 [color=Red,label="v1",shape=box]
+	203->204
+	205 [color=Red,label="关系运算符",shape=box]
+	199->205
+	206 [color=Red,label="sym",shape=box]
+	205->206
+	207 [color=Red,label="表达式",shape=box]
+	199->207
+	208 [color=Red,label="项",shape=box]
+	207->208
+	209 [color=Red,label="因子",shape=box]
+	208->209
+	210 [color=Red,label="数字",shape=box]
+	209->210
+	211 [color=Red,label="1",shape=box]
+	210->211
+	212 [color=Red,label="then",shape=box]
+	197->212
+	213 [color=Red,label="语句",shape=box]
+	197->213
+	214 [color=Red,label="复合语句",shape=box]
+	213->214
+	215 [color=Red,label="begin",shape=box]
+	214->215
+	216 [color=Red,label="语句",shape=box]
+	214->216
+	217 [color=Red,label="赋值语句",shape=box]
+	218 [color=Red,label="标识符",shape=box]
+	216->217
+	217->218
+	219 [color=Red,label="v1",shape=box]
+	218->219
+	220 [color=Red,label=":=",shape=box]
+	217->220
+	221 [color=Red,label="表达式",shape=box]
+	217->221
+	222 [color=Red,label="项",shape=box]
+	221->222
+	223 [color=Red,label="因子",shape=box]
+	222->223
+	224 [color=Red,label="标识符",shape=box]
+	223->224
+	225 [color=Red,label="v1",shape=box]
+	224->225
+	226 [color=Red,label="加减运算符",shape=box]
+	221->226
+	227 [color=Red,label="-",shape=box]
+	226->227
+	228 [color=Red,label="项",shape=box]
+	221->228
+	229 [color=Red,label="因子",shape=box]
+	228->229
+	230 [color=Red,label="数字",shape=box]
+	229->230
+	231 [color=Red,label="1",shape=box]
+	230->231
+	232 [color=Red,label=";",shape=box]
+	214->232
+	233 [color=Red,label="语句",shape=box]
+	214->233
+	234 [color=Red,label="赋值语句",shape=box]
+	235 [color=Red,label="标识符",shape=box]
+	233->234
+	234->235
+	236 [color=Red,label="v2",shape=box]
+	235->236
+	237 [color=Red,label=":=",shape=box]
+	234->237
+	238 [color=Red,label="表达式",shape=box]
+	234->238
+	239 [color=Red,label="项",shape=box]
+	238->239
+	240 [color=Red,label="因子",shape=box]
+	239->240
+	241 [color=Red,label="标识符",shape=box]
+	240->241
+	242 [color=Red,label="v2",shape=box]
+	241->242
+	243 [color=Red,label="乘除运算符",shape=box]
+	239->243
+	244 [color=Red,label="*",shape=box]
+	243->244
+	245 [color=Red,label="因子",shape=box]
+	239->245
+	246 [color=Red,label="标识符",shape=box]
+	245->246
+	247 [color=Red,label="v1",shape=box]
+	246->247
+	248 [color=Red,label=";",shape=box]
+	214->248
+	249 [color=Red,label="语句",shape=box]
+	214->249
+	250 [color=Red,label="过程调用语句",shape=box]
+	249->250
+	251 [color=Red,label="call",shape=box]
+	250->251
+	252 [color=Red,label="标识符",shape=box]
+	250->252
+	253 [color=Red,label="p3",shape=box]
+	252->253
+	254 [color=Red,label=";",shape=box]
+	214->254
+	255 [color=Red,label="语句",shape=box]
+	214->255
+	256 [color=Red,label="空",shape=box]
+	255->256
+	257 [color=Red,label="end",shape=box]
+	214->257
+	258 [color=Red,label=";",shape=box]
+	194->258
+	259 [color=Red,label="语句",shape=box]
+	194->259
+	260 [color=Red,label="空",shape=box]
+	259->260
+	261 [color=Red,label="end",shape=box]
+	194->261
+	262 [color=Red,label="语句",shape=box]
+	170->262
+	263 [color=Red,label="复合语句",shape=box]
+	262->263
+	264 [color=Red,label="begin",shape=box]
+	263->264
+	265 [color=Red,label="语句",shape=box]
+	263->265
+	266 [color=Red,label="过程调用语句",shape=box]
+	265->266
+	267 [color=Red,label="call",shape=box]
+	266->267
+	268 [color=Red,label="标识符",shape=box]
+	266->268
+	269 [color=Red,label="p3",shape=box]
+	268->269
+	270 [color=Red,label=";",shape=box]
+	263->270
+	271 [color=Red,label="语句",shape=box]
+	263->271
+	272 [color=Red,label="条件语句",shape=box]
+	271->272
+	273 [color=Red,label="if",shape=box]
+	272->273
+	274 [color=Red,label="条件",shape=box]
+	272->274
+	275 [color=Red,label="odd",shape=box]
+	274->275
+	276 [color=Red,label="表达式",shape=box]
+	274->276
+	277 [color=Red,label="项",shape=box]
+	276->277
+	278 [color=Red,label="因子",shape=box]
+	277->278
+	279 [color=Red,label="标识符",shape=box]
+	278->279
+	280 [color=Red,label="c2",shape=box]
+	279->280
+	281 [color=Red,label="then",shape=box]
+	272->281
+	282 [color=Red,label="语句",shape=box]
+	272->282
+	283 [color=Red,label="写语句",shape=box]
+	282->283
+	284 [color=Red,label="(",shape=box]
+	283->284
+	285 [color=Red,label="表达式",shape=box]
+	283->285
+	286 [color=Red,label="项",shape=box]
+	285->286
+	287 [color=Red,label="因子",shape=box]
+	286->287
+	288 [color=Red,label="标识符",shape=box]
+	287->288
+	289 [color=Red,label="c2",shape=box]
+	288->289
+	290 [color=Red,label=")",shape=box]
+	283->290
+	291 [color=Red,label=";",shape=box]
+	263->291
+	292 [color=Red,label="语句",shape=box]
+	263->292
+	293 [color=Red,label="条件语句",shape=box]
+	292->293
+	294 [color=Red,label="if",shape=box]
+	293->294
+	295 [color=Red,label="条件",shape=box]
+	293->295
+	296 [color=Red,label="表达式",shape=box]
+	295->296
+	297 [color=Red,label="项",shape=box]
+	296->297
+	298 [color=Red,label="因子",shape=box]
+	297->298
+	299 [color=Red,label="标识符",shape=box]
+	298->299
+	300 [color=Red,label="c2",shape=box]
+	299->300
+	301 [color=Red,label="关系运算符",shape=box]
+	295->301
+	302 [color=Red,label="sym",shape=box]
+	301->302
+	303 [color=Red,label="表达式",shape=box]
+	295->303
+	304 [color=Red,label="项",shape=box]
+	303->304
+	305 [color=Red,label="因子",shape=box]
+	304->305
+	306 [color=Red,label="数字",shape=box]
+	305->306
+	307 [color=Red,label="2",shape=box]
+	306->307
+	308 [color=Red,label="then",shape=box]
+	293->308
+	309 [color=Red,label="语句",shape=box]
+	293->309
+	310 [color=Red,label="写语句",shape=box]
+	309->310
+	311 [color=Red,label="(",shape=box]
+	310->311
+	312 [color=Red,label="表达式",shape=box]
+	310->312
+	313 [color=Red,label="项",shape=box]
+	312->313
+	314 [color=Red,label="因子",shape=box]
+	313->314
+	315 [color=Red,label="标识符",shape=box]
+	314->315
+	316 [color=Red,label="c2",shape=box]
+	315->316
+	317 [color=Red,label="加减运算符",shape=box]
+	312->317
+	318 [color=Red,label="+",shape=box]
+	317->318
+	319 [color=Red,label="项",shape=box]
+	312->319
+	320 [color=Red,label="因子",shape=box]
+	319->320
+	321 [color=Red,label="数字",shape=box]
+	320->321
+	322 [color=Red,label="1",shape=box]
+	321->322
+	323 [color=Red,label=")",shape=box]
+	310->323
+	324 [color=Red,label="end",shape=box]
+	263->324
+	325 [color=Red,label="语句",shape=box]
+	3->325
+	326 [color=Red,label="复合语句",shape=box]
+	325->326
+	327 [color=Red,label="begin",shape=box]
+	326->327
+	328 [color=Red,label="语句",shape=box]
+	326->328
+	329 [color=Red,label="读语句",shape=box]
+	328->329
+	330 [color=Red,label="(",shape=box]
+	329->330
+	331 [color=Red,label="标识符",shape=box]
+	329->331
+	332 [color=Red,label="v1",shape=box]
+	331->332
+	333 [color=Red,label=",",shape=box]
+	329->333
+	334 [color=Red,label="标识符",shape=box]
+	329->334
+	335 [color=Red,label="v2",shape=box]
+	334->335
+	336 [color=Red,label=")",shape=box]
+	329->336
+	337 [color=Red,label=";",shape=box]
+	326->337
+	338 [color=Red,label="语句",shape=box]
+	326->338
+	339 [color=Red,label="条件语句",shape=box]
+	338->339
+	340 [color=Red,label="if",shape=box]
+	339->340
+	341 [color=Red,label="条件",shape=box]
+	339->341
+	342 [color=Red,label="表达式",shape=box]
+	341->342
+	343 [color=Red,label="项",shape=box]
+	342->343
+	344 [color=Red,label="因子",shape=box]
+	343->344
+	345 [color=Red,label="标识符",shape=box]
+	344->345
+	346 [color=Red,label="v1",shape=box]
+	345->346
+	347 [color=Red,label="关系运算符",shape=box]
+	341->347
+	348 [color=Red,label="sym",shape=box]
+	347->348
+	349 [color=Red,label="表达式",shape=box]
+	341->349
+	350 [color=Red,label="项",shape=box]
+	349->350
+	351 [color=Red,label="因子",shape=box]
+	350->351
+	352 [color=Red,label="标识符",shape=box]
+	351->352
+	353 [color=Red,label="v2",shape=box]
+	352->353
+	354 [color=Red,label="then",shape=box]
+	339->354
+	355 [color=Red,label="语句",shape=box]
+	339->355
+	356 [color=Red,label="复合语句",shape=box]
+	355->356
+	357 [color=Red,label="begin",shape=box]
+	356->357
+	358 [color=Red,label="语句",shape=box]
+	356->358
+	359 [color=Red,label="赋值语句",shape=box]
+	360 [color=Red,label="标识符",shape=box]
+	358->359
+	359->360
+	361 [color=Red,label="v3",shape=box]
+	360->361
+	362 [color=Red,label=":=",shape=box]
+	359->362
+	363 [color=Red,label="表达式",shape=box]
+	359->363
+	364 [color=Red,label="项",shape=box]
+	363->364
+	365 [color=Red,label="因子",shape=box]
+	364->365
+	366 [color=Red,label="标识符",shape=box]
+	365->366
+	367 [color=Red,label="v1",shape=box]
+	366->367
+	368 [color=Red,label=";",shape=box]
+	356->368
+	369 [color=Red,label="语句",shape=box]
+	356->369
+	370 [color=Red,label="赋值语句",shape=box]
+	371 [color=Red,label="标识符",shape=box]
+	369->370
+	370->371
+	372 [color=Red,label="v1",shape=box]
+	371->372
+	373 [color=Red,label=":=",shape=box]
+	370->373
+	374 [color=Red,label="表达式",shape=box]
+	370->374
+	375 [color=Red,label="项",shape=box]
+	374->375
+	376 [color=Red,label="因子",shape=box]
+	375->376
+	377 [color=Red,label="标识符",shape=box]
+	376->377
+	378 [color=Red,label="v2",shape=box]
+	377->378
+	379 [color=Red,label=";",shape=box]
+	356->379
+	380 [color=Red,label="语句",shape=box]
+	356->380
+	381 [color=Red,label="赋值语句",shape=box]
+	382 [color=Red,label="标识符",shape=box]
+	380->381
+	381->382
+	383 [color=Red,label="v2",shape=box]
+	382->383
+	384 [color=Red,label=":=",shape=box]
+	381->384
+	385 [color=Red,label="表达式",shape=box]
+	381->385
+	386 [color=Red,label="项",shape=box]
+	385->386
+	387 [color=Red,label="因子",shape=box]
+	386->387
+	388 [color=Red,label="标识符",shape=box]
+	387->388
+	389 [color=Red,label="v3",shape=box]
+	388->389
+	390 [color=Red,label=";",shape=box]
+	356->390
+	391 [color=Red,label="语句",shape=box]
+	356->391
+	392 [color=Red,label="空",shape=box]
+	391->392
+	393 [color=Red,label="end",shape=box]
+	356->393
+	394 [color=Red,label=";",shape=box]
+	326->394
+	395 [color=Red,label="语句",shape=box]
+	326->395
+	396 [color=Red,label="复合语句",shape=box]
+	395->396
+	397 [color=Red,label="begin",shape=box]
+	396->397
+	398 [color=Red,label="语句",shape=box]
+	396->398
+	399 [color=Red,label="空",shape=box]
+	398->399
+	400 [color=Red,label=";",shape=box]
+	396->400
+	401 [color=Red,label="语句",shape=box]
+	396->401
+	402 [color=Red,label="赋值语句",shape=box]
+	403 [color=Red,label="标识符",shape=box]
+	401->402
+	402->403
+	404 [color=Red,label="v3",shape=box]
+	403->404
+	405 [color=Red,label=":=",shape=box]
+	402->405
+	406 [color=Red,label="表达式",shape=box]
+	402->406
+	407 [color=Red,label="项",shape=box]
+	406->407
+	408 [color=Red,label="因子",shape=box]
+	407->408
+	409 [color=Red,label="数字",shape=box]
+	408->409
+	410 [color=Red,label="1",shape=box]
+	409->410
+	411 [color=Red,label=";",shape=box]
+	396->411
+	412 [color=Red,label="语句",shape=box]
+	396->412
+	413 [color=Red,label="过程调用语句",shape=box]
+	412->413
+	414 [color=Red,label="call",shape=box]
+	413->414
+	415 [color=Red,label="标识符",shape=box]
+	413->415
+	416 [color=Red,label="p1",shape=box]
+	415->416
+	417 [color=Red,label=";",shape=box]
+	396->417
+	418 [color=Red,label="语句",shape=box]
+	396->418
+	419 [color=Red,label="写语句",shape=box]
+	418->419
+	420 [color=Red,label="(",shape=box]
+	419->420
+	421 [color=Red,label="表达式",shape=box]
+	419->421
+	422 [color=Red,label="项",shape=box]
+	421->422
+	423 [color=Red,label="因子",shape=box]
+	422->423
+	424 [color=Red,label="标识符",shape=box]
+	423->424
+	425 [color=Red,label="c1",shape=box]
+	424->425
+	426 [color=Red,label=",",shape=box]
+	419->426
+	427 [color=Red,label="表达式",shape=box]
+	419->427
+	428 [color=Red,label="项",shape=box]
+	427->428
+	429 [color=Red,label="因子",shape=box]
+	428->429
+	430 [color=Red,label="标识符",shape=box]
+	429->430
+	431 [color=Red,label="c1",shape=box]
+	430->431
+	432 [color=Red,label="乘除运算符",shape=box]
+	428->432
+	433 [color=Red,label="*",shape=box]
+	432->433
+	434 [color=Red,label="因子",shape=box]
+	428->434
+	435 [color=Red,label="标识符",shape=box]
+	434->435
+	436 [color=Red,label="v1",shape=box]
+	435->436
+	437 [color=Red,label=",",shape=box]
+	419->437
+	438 [color=Red,label="表达式",shape=box]
+	419->438
+	439 [color=Red,label="项",shape=box]
+	438->439
+	440 [color=Red,label="因子",shape=box]
+	439->440
+	441 [color=Red,label="标识符",shape=box]
+	440->441
+	442 [color=Red,label="c1",shape=box]
+	441->442
+	443 [color=Red,label="乘除运算符",shape=box]
+	439->443
+	444 [color=Red,label="*",shape=box]
+	443->444
+	445 [color=Red,label="因子",shape=box]
+	439->445
+	446 [color=Red,label="标识符",shape=box]
+	445->446
+	447 [color=Red,label="v1",shape=box]
+	446->447
+	448 [color=Red,label="乘除运算符",shape=box]
+	439->448
+	449 [color=Red,label="/",shape=box]
+	448->449
+	450 [color=Red,label="因子",shape=box]
+	439->450
+	451 [color=Red,label="数字",shape=box]
+	450->451
+	452 [color=Red,label="2",shape=box]
+	451->452
+	453 [color=Red,label=")",shape=box]
+	419->453
+	454 [color=Red,label=";",shape=box]
+	396->454
+	455 [color=Red,label="语句",shape=box]
+	396->455
+	456 [color=Red,label="空",shape=box]
+	455->456
+	457 [color=Red,label="end",shape=box]
+	396->457
+	458 [color=Red,label=";",shape=box]
+	326->458
+	459 [color=Red,label="语句",shape=box]
+	326->459
+	460 [color=Red,label="读语句",shape=box]
+	459->460
+	461 [color=Red,label="(",shape=box]
+	460->461
+	462 [color=Red,label="标识符",shape=box]
+	460->462
+	463 [color=Red,label="v1",shape=box]
+	462->463
+	464 [color=Red,label=")",shape=box]
+	460->464
+	465 [color=Red,label=";",shape=box]
+	326->465
+	466 [color=Red,label="语句",shape=box]
+	326->466
+	467 [color=Red,label="赋值语句",shape=box]
+	468 [color=Red,label="标识符",shape=box]
+	466->467
+	467->468
+	469 [color=Red,label="v2",shape=box]
+	468->469
+	470 [color=Red,label=":=",shape=box]
+	467->470
+	471 [color=Red,label="表达式",shape=box]
+	467->471
+	472 [color=Red,label="项",shape=box]
+	471->472
+	473 [color=Red,label="因子",shape=box]
+	472->473
+	474 [color=Red,label="标识符",shape=box]
+	473->474
+	475 [color=Red,label="v1",shape=box]
+	474->475
+	476 [color=Red,label=";",shape=box]
+	326->476
+	477 [color=Red,label="语句",shape=box]
+	326->477
+	478 [color=Red,label="过程调用语句",shape=box]
+	477->478
+	479 [color=Red,label="call",shape=box]
+	478->479
+	480 [color=Red,label="标识符",shape=box]
+	478->480
+	481 [color=Red,label="p2",shape=box]
+	480->481
+	482 [color=Red,label=";",shape=box]
+	326->482
+	483 [color=Red,label="语句",shape=box]
+	326->483
+	484 [color=Red,label="写语句",shape=box]
+	483->484
+	485 [color=Red,label="(",shape=box]
+	484->485
+	486 [color=Red,label="表达式",shape=box]
+	484->486
+	487 [color=Red,label="项",shape=box]
+	486->487
+	488 [color=Red,label="因子",shape=box]
+	487->488
+	489 [color=Red,label="标识符",shape=box]
+	488->489
+	490 [color=Red,label="v2",shape=box]
+	489->490
+	491 [color=Red,label=")",shape=box]
+	484->491
+	492 [color=Red,label=";",shape=box]
+	326->492
+	493 [color=Red,label="语句",shape=box]
+	326->493
+	494 [color=Red,label="空",shape=box]
+	493->494
+	495 [color=Red,label="end",shape=box]
+	326->495
+}

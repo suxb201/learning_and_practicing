@@ -1,0 +1,324 @@
+[sym]
+index	val	kind	addr
+0	const	3	RW	
+1	c1	ID	0
+2	=	20	RW	
+3	2	NUM	0
+4	;	30	RW	
+5	var	4	RW	
+6	v1	ID	1
+7	,	29	RW	
+8	v2	ID	2
+9	,	29	RW	
+10	v3	ID	3
+11	,	29	RW	
+12	v4	ID	4
+13	;	30	RW	
+14	procedure	5	RW	
+15	p1	ID	5
+16	;	30	RW	
+17	var	4	RW	
+18	v5	ID	6
+19	;	30	RW	
+20	begin	6	RW	
+21	v5	ID	6
+22	:=	26	RW	
+23	2	NUM	1
+24	;	30	RW	
+25	write	15	RW	
+26	(	27	RW	
+27	v5	ID	6
+28	/	19	RW	
+29	2	NUM	2
+30	+	16	RW	
+31	2	NUM	3
+32	-	17	RW	
+33	1	NUM	4
+34	)	28	RW	
+35	;	30	RW	
+36	while	12	RW	
+37	v3	ID	3
+38	#	21	RW	
+39	0	NUM	5
+40	do	13	RW	
+41	begin	6	RW	
+42	v4	ID	4
+43	:=	26	RW	
+44	v1	ID	1
+45	/	19	RW	
+46	v2	ID	2
+47	;	30	RW	
+48	v3	ID	3
+49	:=	26	RW	
+50	v1	ID	1
+51	-	17	RW	
+52	v4	ID	4
+53	*	18	RW	
+54	v2	ID	2
+55	;	30	RW	
+56	v1	ID	1
+57	:=	26	RW	
+58	v2	ID	2
+59	;	30	RW	
+60	v2	ID	2
+61	:=	26	RW	
+62	v3	ID	3
+63	;	30	RW	
+64	end	7	RW	
+65	;	30	RW	
+66	end	7	RW	
+67	;	30	RW	
+68	procedure	5	RW	
+69	p2	ID	7
+70	;	30	RW	
+71	const	3	RW	
+72	c2	ID	8
+73	=	20	RW	
+74	2	NUM	6
+75	;	30	RW	
+76	procedure	5	RW	
+77	p3	ID	9
+78	;	30	RW	
+79	begin	6	RW	
+80	if	9	RW	
+81	v1	ID	1
+82	#	21	RW	
+83	1	NUM	7
+84	then	10	RW	
+85	begin	6	RW	
+86	v1	ID	1
+87	:=	26	RW	
+88	v1	ID	1
+89	-	17	RW	
+90	1	NUM	8
+91	;	30	RW	
+92	v2	ID	2
+93	:=	26	RW	
+94	v2	ID	2
+95	*	18	RW	
+96	v1	ID	1
+97	;	30	RW	
+98	call	11	RW	
+99	p3	ID	9
+100	;	30	RW	
+101	end	7	RW	
+102	;	30	RW	
+103	end	7	RW	
+104	;	30	RW	
+105	begin	6	RW	
+106	call	11	RW	
+107	p3	ID	9
+108	;	30	RW	
+109	if	9	RW	
+110	odd	8	RW	
+111	c2	ID	8
+112	then	10	RW	
+113	write	15	RW	
+114	(	27	RW	
+115	c2	ID	8
+116	)	28	RW	
+117	;	30	RW	
+118	if	9	RW	
+119	c2	ID	8
+120	=	20	RW	
+121	2	NUM	9
+122	then	10	RW	
+123	write	15	RW	
+124	(	27	RW	
+125	c2	ID	8
+126	+	16	RW	
+127	1	NUM	10
+128	)	28	RW	
+129	end	7	RW	
+130	;	30	RW	
+131	begin	6	RW	
+132	read	14	RW	
+133	(	27	RW	
+134	v1	ID	1
+135	,	29	RW	
+136	v2	ID	2
+137	)	28	RW	
+138	;	30	RW	
+139	if	9	RW	
+140	v1	ID	1
+141	<	22	RW	
+142	v2	ID	2
+143	then	10	RW	
+144	begin	6	RW	
+145	v3	ID	3
+146	:=	26	RW	
+147	v1	ID	1
+148	;	30	RW	
+149	v1	ID	1
+150	:=	26	RW	
+151	v2	ID	2
+152	;	30	RW	
+153	v2	ID	2
+154	:=	26	RW	
+155	v3	ID	3
+156	;	30	RW	
+157	end	7	RW	
+158	;	30	RW	
+159	begin	6	RW	
+160	;	30	RW	
+161	v3	ID	3
+162	:=	26	RW	
+163	1	NUM	11
+164	;	30	RW	
+165	call	11	RW	
+166	p1	ID	5
+167	;	30	RW	
+168	write	15	RW	
+169	(	27	RW	
+170	c1	ID	0
+171	,	29	RW	
+172	c1	ID	0
+173	*	18	RW	
+174	v1	ID	1
+175	,	29	RW	
+176	c1	ID	0
+177	*	18	RW	
+178	v1	ID	1
+179	/	19	RW	
+180	2	NUM	12
+181	)	28	RW	
+182	;	30	RW	
+183	end	7	RW	
+184	;	30	RW	
+185	read	14	RW	
+186	(	27	RW	
+187	v1	ID	1
+188	)	28	RW	
+189	;	30	RW	
+190	v2	ID	2
+191	:=	26	RW	
+192	v1	ID	1
+193	;	30	RW	
+194	call	11	RW	
+195	p2	ID	7
+196	;	30	RW	
+197	write	15	RW	
+198	(	27	RW	
+199	v2	ID	2
+200	)	28	RW	
+201	;	30	RW	
+202	end	7	RW	
+203	.	31	RW	
+
+[table]
+index	kind	name	val/lev	adr	tp
+0	    const	c1	    2	    -	0
+1	    var	    v1	    0	    3	0
+2	    var 	v2	    0	    4	0
+3	    var	    v3	    0	    5	0
+4	    var	    v4	    0	    6	0
+5   	proc	p1	    0	    1	1
+6	    var	    v5	    1	    3	1
+7	    proc	p2	    0	    47	2
+8	    const	c2	    2	    -	2
+9	    proc	p3	    1	    32	3
+
+[code]
+index	f	l	a
+0	    jmp	0	63
+1	    int	0	4
+2	    lit	0	2
+3	    sto	0	3
+4	    lod	0	3
+5	    lit	0	2
+6	    opr	0	4	/
+7	    lit	0	2
+8	    opr	0	1	+
+9	    lit	0	1
+10	    opr	0	2	-
+11	    opr	0	13	write
+12	    lod	1	5
+13	    lit	0	0
+14	    opr	0	7	#
+15	    jpc	0	31
+16	    lod	1	3
+17	    lod	1	4
+18	    opr	0	4	/
+19	sto	1	6
+20	lod	1	3
+21	lod	1	6
+22	lod	1	4
+23	opr	0	3	*
+24	opr	0	2	-
+25	sto	1	5
+26	lod	1	4
+27	sto	1	3
+28	lod	1	5
+29	sto	1	4
+30	jmp	0	12
+31	opr	0	0	return
+32	int	0	3
+33	lod	2	3
+34	lit	0	1
+35	opr	0	7	#
+36	jpc	0	46
+37	lod	2	3
+38	lit	0	1
+39	opr	0	2	-
+40	sto	2	3
+41	lod	2	4
+42	lod	2	3
+43	opr	0	3	*
+44	sto	2	4
+45	cal	1	32
+46	opr	0	0	return
+47	int	0	3
+48	cal	0	32
+49	lit	0	2
+50	opr	0	5	odd
+51	jpc	0	54
+52	lit	0	2
+53	opr	0	13	write
+54	lit	0	2
+55	lit	0	2
+56	opr	0	6	=
+57	jpc	0	62
+58	lit	0	2
+59	lit	0	1
+60	opr	0	1	+
+61	opr	0	13	write
+62	opr	0	0	return
+63	int	0	7
+64	opr	0	12	read
+65	sto	0	3
+66	opr	0	12	read
+67	sto	0	4
+68	lod	0	3
+69	lod	0	4
+70	opr	0	8	<
+71	jpc	0	78
+72	lod	0	3
+73	sto	0	5
+74	lod	0	4
+75	sto	0	3
+76	lod	0	5
+77	sto	0	4
+78	lit	0	1
+79	sto	0	5
+80	cal	0	1
+81	lit	0	2
+82	opr	0	13	write
+83	lit	0	2
+84	lod	0	3
+85	opr	0	3	*
+86	opr	0	13	write
+87	lit	0	2
+88	lod	0	3
+89	opr	0	3	*
+90	lit	0	2
+91	opr	0	4	/
+92	opr	0	13	write
+93	opr	0	12	read
+94	sto	0	3
+95	lod	0	3
+96	sto	0	4
+97	cal	0	47
+98	lod	0	4
+99	opr	0	13	write
+100	opr	0	0	return
+
