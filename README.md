@@ -18,3 +18,7 @@ pass
 
 ### Compiler
 - [Compiler](https://github.com/suxb201/Learning_and_Practicing/tree/master/Courses/Courses/Compiler/exPL): a simple PL/0 compiler
+
+
+### Computer Network
+- [telnet_IRC_server](https://github.com/suxb201/Learning_and_Practicing/tree/master/Courses/Courses/Computer_Network/telnet_IRC_server): implementation of IRC based on telnet
