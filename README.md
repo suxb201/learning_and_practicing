@@ -4,7 +4,10 @@ This repertory is used to store some code that I wrote when I was learning somet
 
 ## Deep Learning
 
-- [Captcha Recognition](https://github.com/suxb201/Learning-and-Practicing/tree/master/Deep%20Learning/Captcha%20Recognition): a simple cnn demo.
+- [Captcha Recognition](https://github.com/suxb201/Learning_and_Practicing/tree/master/Deep_Learning/Captcha_Recognition): a simple cnn demo.
+- [TALL](https://github.com/suxb201/Learning_and_Practicing/tree/master/Deep_Learning/TALL): Jiyang Gao, Chen Sun, Zhenheng Yang, and Ram Nevatia. 2017. TALL: Temporal
+Activity Localization via Language Query. In Proceedings of the IEEE International
+Conference on Computer Vision. IEEE, 5267–5275.
 
 ## Web
 
