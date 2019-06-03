@@ -19,6 +19,7 @@ pass
 
 - [Class_1](https://github.com/suxb201/Learning_and_Practicing/tree/master/Courses/Computer_Graphics/Class_1): Bresenham & ScanLine
 - [Class_2](https://github.com/suxb201/Learning_and_Practicing/tree/master/Courses/Computer_Graphics/Class_2): Liang-Barsky
+- [Class_3](https://github.com/suxb201/Learning_and_Practicing/tree/master/Courses/Computer_Graphics/Class_3): Load OBJ file and add texture
 
 ### Compiler
 - [Compiler](https://github.com/suxb201/Learning_and_Practicing/tree/master/Courses/Courses/Compiler/exPL): a simple PL/0 compiler
