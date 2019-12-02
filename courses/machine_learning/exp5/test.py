@@ -46,7 +46,7 @@ class SVM(object):
         for i in range(n_samples):
             for j in range(n_samples):
                 K[i, j] = self.kernel(X[i], X[j])
-
+        print(y.shape)
         P = cvxopt.matrix(np.outer(y, y) * K)
         q = cvxopt.matrix(np.ones(n_samples) * -1)
         A = cvxopt.matrix(y, (1, n_samples))
@@ -87,8 +87,12 @@ class SVM(object):
         # Weight vector
         if self.kernel == linear_kernel:
             self.w = np.zeros(n_features)
-            for n in range(len(self.a)):
-                self.w += self.a[n] * self.sv_y[n] * self.sv[n]
+            for i in range(len(self.a)):
+                print(self.a[i].shape)
+                print(self.sv_y[i].shape)
+                print(self.sv[i].shape)
+                print(self.w.shape)
+                self.w += self.a[i] * self.sv_y[i] * self.sv[i]
         else:
             self.w = None
 
@@ -177,8 +181,8 @@ if __name__ == "__main__":
             # w.x + b = c
             return (-w[0] * x - b + c) / w[1]
 
-        pl.plot(X1_train[:, 0], X1_train[:, 1], "ro")
-        pl.plot(X2_train[:, 0], X2_train[:, 1], "bo")
+        pl.plot(X1_train[:, 0], X1_train[:, 1], "r+")
+        pl.plot(X2_train[:, 0], X2_train[:, 1], "b*")
         pl.scatter(clf.sv[:, 0], clf.sv[:, 1], s=100, c="g")
 
         # w.x + b = 0
@@ -213,7 +217,7 @@ if __name__ == "__main__":
 
         X1, X2 = np.meshgrid(np.linspace(-6, 6, 50), np.linspace(-6, 6, 50))
         X = np.array([[x1, x2] for x1, x2 in zip(np.ravel(X1), np.ravel(X2))])
-        Z = clf.project(X).reshape(X1.shape)
+        Z = clf.predict(X).reshape(X1.shape)
         pl.contour(X1, X2, Z, [0.0], colors='k', linewidths=1, origin='lower')
         pl.contour(X1, X2, Z + 1, [0.0], colors='grey', linewidths=1, origin='lower')
         pl.contour(X1, X2, Z - 1, [0.0], colors='grey', linewidths=1, origin='lower')
@@ -267,6 +271,6 @@ if __name__ == "__main__":
         plot_contour(X_train[y_train == 1], X_train[y_train == -1], clf)
 
 
-    test_linear()
-    # test_non_linear()
+    # test_linear()
+    test_non_linear()
     # test_soft()
