@@ -36,6 +36,6 @@ Data and PDF can be found in [https://funglee.github.io/ml/ml.html#lab](https://
 - [exp2](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp2): Logistic Regression and Newton's Method
 - [exp3](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp3): Regularization
 - [exp4](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp4): Naive Bayes
-- [exp5](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp5): SVM
-- [exp6]: K-Means
-- [exp7]: PCA in Face Detection
+- [exp5](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp5): SVM 
+- exp6: K-Means
+- exp7: PCA in Face Detection
