@@ -24,11 +24,11 @@ Conference on Computer Vision. IEEE, 5267–5275.
 - [exp3](https://github.com/suxb201/learning_and_practicing/tree/master/courses/computer_graphics/class3): load OBJ file and add texture
 
 ### 3.2 Compiler
-- [Compiler](https://github.com/suxb201/learning_and_practicing/tree/master/courses/compiler/exPL): a simple PL/0 compiler
+- [Compiler](https://github.com/suxb201/learning_and_practicing/tree/master/courses/compiler/exPL): A simple PL/0 compiler
 
 
 ### 3.3 Computer Network
-- [telnet_IRC_server](https://github.com/suxb201/learning_and_practicing/tree/master/courses/computer_network/telnet_IRC_server): implementation of IRC based on telnet in Go
+- [telnet_IRC_server](https://github.com/suxb201/learning_and_practicing/tree/master/courses/computer_network/telnet_IRC_server): Implementation of IRC based on telnet in Go
 
 ### 3.4 Machine Learning
 Data and PDF can be found in [https://funglee.github.io/ml/ml.html#lab](https://funglee.github.io/ml/ml.html#lab).
