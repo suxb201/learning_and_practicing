@@ -5,7 +5,8 @@ This repertory is used to store some code that I wrote when I was learning somet
 
 ## 1 Toys
 
-- [tooman](https://github.com/Yuandiaodiaodiao/toolman):  A QQ robot for managing RSS 
+- [tooman](https://github.com/Yuandiaodiaodiao/toolman): A QQ robot for managing RSS 
+- [sdu_conference_room_fronted](https://github.com/suxb201/sdu_conference_room_fronted): sdu_conference_room_fronted
 
 ## 2 Deep Learning
 
@@ -13,6 +14,7 @@ This repertory is used to store some code that I wrote when I was learning somet
 - [TALL](https://github.com/suxb201/learning_and_practicing/tree/master/deeplearning/TALL): Jiyang Gao, Chen Sun, Zhenheng Yang, and Ram Nevatia. 2017. TALL: Temporal
 Activity Localization via Language Query. In Proceedings of the IEEE International
 Conference on Computer Vision. IEEE, 5267–5275.
+- [CMHN](Cross-Modal Hashing for Efﬁciently Retrieving Moments in Videos)
 
 
 ## 3 Courses
@@ -37,5 +39,5 @@ Data and PDF can be found in [https://funglee.github.io/ml/ml.html#lab](https://
 - [exp3](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp3): Regularization
 - [exp4](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp4): Naive Bayes
 - [exp5](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp5): SVM 
-- exp6: K-Means
+- [exp6](https://github.com/suxb201/learning_and_practicing/tree/master/courses/machine_learning/exp5): K-Means
 - exp7: PCA in Face Detection
