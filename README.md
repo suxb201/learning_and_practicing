@@ -14,7 +14,7 @@ This repertory is used to store some code that I wrote when I was learning somet
 - [TALL](https://github.com/suxb201/learning_and_practicing/tree/master/deeplearning/TALL): Jiyang Gao, Chen Sun, Zhenheng Yang, and Ram Nevatia. 2017. TALL: Temporal
 Activity Localization via Language Query. In Proceedings of the IEEE International
 Conference on Computer Vision. IEEE, 5267–5275.
-- [CMHN](Cross-Modal Hashing for Efﬁciently Retrieving Moments in Videos)
+- [CMHN](https://github.com/Huyp777/CMHN): Cross-Modal Hashing for Efﬁciently Retrieving Moments in Videos
 
 
 ## 3 Courses
